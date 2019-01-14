@@ -11,11 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a348e0a7-de2a-42eb-9ea8-1b6d5472b488" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/javacodegeeks/androidaccelerometerexample/AndroidAccelerometerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/javacodegeeks/androidaccelerometerexample/AndroidAccelerometerExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="a348e0a7-de2a-42eb-9ea8-1b6d5472b488" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,14 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidAccelerometerExample.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AndroidAccelerometerExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/javacodegeeks/androidaccelerometerexample/AndroidAccelerometerExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
+            <state relative-caret-position="214">
+              <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileOutputStream.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-19/android.jar!/java/io/FileOutputStream.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -72,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="78" lean-forward="true" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
               <folding>
                 <element signature="e#419#437#0" expanded="true" />
                 <element signature="e#659#677#0" expanded="true" />
@@ -2647,7 +2652,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="78" lean-forward="true" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
           <folding>
             <element signature="e#419#437#0" expanded="true" />
             <element signature="e#659#677#0" expanded="true" />
@@ -2660,11 +2665,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/javacodegeeks/androidaccelerometerexample/AndroidAccelerometerExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
+        <state relative-caret-position="214">
+          <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-19/android.jar!/java/io/FileOutputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="53" />
         </state>
       </provider>
     </entry>

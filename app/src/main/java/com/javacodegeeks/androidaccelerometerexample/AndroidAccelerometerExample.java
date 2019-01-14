@@ -111,7 +111,7 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
 		// Mở một luồng ghi file.
         File myFile = new File(path);
          myFile.createNewFile();
-            FileOutputStream fOut = new FileOutputStream(myFile);
+            FileOutputStream fOut = new FileOutputStream(myFile,true);
             OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
             myOutWriter.append(String_Label_X);
             myOutWriter.append(String_X_axis);
