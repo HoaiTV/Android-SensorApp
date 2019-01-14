@@ -1,17 +1,25 @@
 package com.javacodegeeks.androidaccelerometerexample;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Vibrator;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.util.List;
 
 public class AndroidAccelerometerExample extends Activity implements SensorEventListener {
 
@@ -90,6 +98,8 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
 
 	private void saveData_X_Axis(float X_axis,float Y_axis,float Z_axis)
 	{
+        File extStore = Environment.getExternalStorageDirectory();
+        String path = extStore.getAbsolutePath() + "/" + simpleX_value;
 		String String_X_axis = String.valueOf(X_axis);
 		String String_Y_axis = String.valueOf(Y_axis);
 		String String_Z_axis = String.valueOf(Z_axis);
@@ -99,7 +109,20 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
 		try {
 
 		// Mở một luồng ghi file.
-		FileOutputStream out = this.openFileOutput(simpleX_value, MODE_PRIVATE);
+        File myFile = new File(path);
+         myFile.createNewFile();
+            FileOutputStream fOut = new FileOutputStream(myFile);
+            OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
+            myOutWriter.append(String_Label_X);
+            myOutWriter.append(String_X_axis);
+            myOutWriter.append(String_Label_Y);
+            myOutWriter.append(String_Y_axis);
+            myOutWriter.append(String_Label_z);
+            myOutWriter.append(String_Z_axis);
+            myOutWriter.close();
+            fOut.close();
+/*
+            FileOutputStream out = this.openFileOutput(simpleX_value, MODE_PRIVATE);
 		// Ghi dữ liệu.
             out.write(String_Label_X.getBytes());
             out.write(String_X_axis.getBytes());
@@ -107,7 +130,7 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
 			out.write(String_Y_axis.getBytes());
             out.write(String_Label_z.getBytes());
 			out.write(String_Z_axis.getBytes());
-			out.close();
+			out.close();*/
 		} catch (Exception e) {
             e.printStackTrace();
 		}
@@ -198,4 +221,8 @@ public class AndroidAccelerometerExample extends Activity implements SensorEvent
 			maxZ.setText(Float.toString(deltaZMax));
 		}
 	}
+
+
+
+
 }
